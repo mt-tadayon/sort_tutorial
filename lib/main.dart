@@ -27,7 +27,7 @@ class MyHomePage extends StatelessWidget {
       resizeToAvoidBottomInset: false,
       resizeToAvoidBottomPadding: false,
       appBar: AppBar(
-        title: Text('Fold Tutorial'),
+        title: Text('Sort Tutorial'),
       ),
       body: Dashboard(),
     );

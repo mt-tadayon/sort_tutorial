@@ -87,7 +87,7 @@ class _DashboardState extends State<Dashboard> {
             height: 20,
           ),
           DataTable(
-              sortColumnIndex: 1,
+            sortColumnIndex: 1,
               sortAscending: sort,
               columns: [
             DataColumn(
@@ -95,13 +95,12 @@ class _DashboardState extends State<Dashboard> {
             ),
             DataColumn(
               numeric: true,
-              ///TODO: sort the price column ascending and descending
-              onSort: (int index, bool ascending) {
-                if(ascending) {
-                  items.sort((a, b) => b.itemPrice.compareTo(a.itemPrice));
-                } else {
-                  items.sort((a, b) => a.itemPrice.compareTo(b.itemPrice));
-                }
+              // TODO: sort the rows according to the item price
+              onSort: (int index, bool ascending ) {
+                var sortedItems = items;
+                sortedItems.sort((a, b) => a.itemPrice.compareTo(b.itemPrice));
+
+                items = ascending ? sortedItems : sortedItems.reversed.toList();
                 setState(() {
                   sort = ascending;
                 });
