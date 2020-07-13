@@ -3,7 +3,7 @@
 # List Method: .sort()
 
 This is an application with a Form and a DataTable. You can add new items with a price in the InputField and see all items with the total amount in the table.
-- [You can find the link to the YouTube video here.](https://youtu.be/rzdmjnA_5xQ)
+- [You can find the link to the YouTube video here.](https://youtu.be/6-j5mF792M4)
 - [The link to DartPad with three example of using sort method](https://dartpad.dev/566951631a731bfa1e0cf51d775447e8)
 
 ## Getting Started

@@ -17,6 +17,7 @@ class _DashboardState extends State<Dashboard> {
   List<Item> items = [];
   bool sort = false;
 
+
   final _formKey = GlobalKey<FormState>();
   TextEditingController _itemController;
   TextEditingController _priceController;
@@ -96,7 +97,7 @@ class _DashboardState extends State<Dashboard> {
             DataColumn(
               numeric: true,
               // TODO: sort the rows according to the item price
-              onSort: (int index, bool ascending ) {
+              onSort: (index, ascending) {
                 var sortedItems = items;
                 sortedItems.sort((a, b) => a.itemPrice.compareTo(b.itemPrice));
 
